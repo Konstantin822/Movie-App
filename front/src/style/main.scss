@@ -1,0 +1,18 @@
+// Global
+@import './global/global.scss';
+@import './global/reset.scss';
+
+// Common 
+@import './common/header.scss';
+@import './common/footer.scss';
+
+// Pages
+@import './pages/home.scss';
+
+// Component
+@import './component/swiper.scss';
+
+// Variables
+@import './variables/color.scss';
+@import './variables/fonts.scss';
+@import './variables/media.scss';
