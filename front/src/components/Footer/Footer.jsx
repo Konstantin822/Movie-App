@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faXTwitter, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 export default function Footer() {
     return (
         <footer className="footer">
@@ -14,10 +17,10 @@ export default function Footer() {
                 </div>
                 <div className="footer__box">
                     <h3>Follow Us</h3>
-                    <a className="footer__box-link footer__box-link_facebook"><img src="/public/images/icons/facebook-f.svg" /></a>
-                    <a className="footer__box-link footer__box-link_x"></a>
-                    <a className="footer__box-link footer__box-link_instagramm"></a>
-                    <a className="footer__box-link footer__box-link_tikTok"></a>
+                    <a className="footer__box-link footer__box-link_facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
+                    <a className="footer__box-link footer__box-link_x"><FontAwesomeIcon icon={faXTwitter} /></a>
+                    <a className="footer__box-link footer__box-link_instagramm"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a className="footer__box-link footer__box-link_tikTok"><FontAwesomeIcon icon={faTiktok} /></a>
                 </div>
             </div>
         </footer>
