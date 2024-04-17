@@ -1,8 +1,10 @@
-import { homeData } from "../../data/homeData";
+
 
 export default function Home() {
-    console.log(homeData)
+
     return (
-        <></>
+
+        <h1>Home Page</h1>
+
     );
 }

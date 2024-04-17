@@ -1,0 +1,56 @@
+.header {
+
+    &__container {
+        padding: 30px 30px;
+        background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        color: #fff;
+        display: flex;
+        position: relative;
+        z-index: 999;
+    }
+
+    &__navigation {
+        display: flex;
+
+        &-list {
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &-list li {
+            display: block;
+        }
+    }
+
+    &__account {
+        position: absolute;
+        top: 25%;
+        right: 100px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &-icon {
+            padding: 5px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &__account button {
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        background: #e50813;
+        border: none;
+        color: #fff;
+        padding: 12px 40px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}

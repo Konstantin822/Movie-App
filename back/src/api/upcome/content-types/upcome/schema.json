@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upcomes",
+  "info": {
+    "singularName": "upcome",
+    "pluralName": "upcomes",
+    "displayName": "upcome"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

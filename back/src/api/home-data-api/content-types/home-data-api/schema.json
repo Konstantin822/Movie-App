@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_data_apis",
+  "info": {
+    "singularName": "home-data-api",
+    "pluralName": "home-data-apis",
+    "displayName": "HomeDataAPI",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "time": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "starring": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}
