@@ -8,10 +8,12 @@
         display: grid;
         grid-template-columns: 6fr 2fr 2fr;
         gap: 30px;
+        margin-left: 50px;
     }
 
     &__box-list {
         display: flex;
+        margin-bottom: 30px;
         gap: 30px;
     }
 
@@ -19,11 +21,24 @@
         display: block;
     }
 
+    &__box:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
     &__box-link {
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
         line-height: 40px;
         background: rgba(255, 255, 255, 0.1);
         margin-right: 20px;
-        padding: 8px 10px;
+        padding: 10px;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
