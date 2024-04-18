@@ -810,6 +810,8 @@ export interface ApiHomeDataApiHomeDataApi extends Schema.CollectionType {
     cover: Attribute.Media;
     date: Attribute.String;
     video: Attribute.String;
+    img: Attribute.Media;
+    type: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

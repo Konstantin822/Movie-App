@@ -1,40 +1,33 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faBell, faUser } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 
 export default function Header() {
+    const [burgerOpen, setBurgerOpen] = useState(false)
+
+    const toogleBurger = () => {
+        setBurgerOpen(!burgerOpen)
+    }
     return (
         <header className="header">
             <div className="container header__container">
-                <div className="header__logo">
-                    <img src="" alt="logo" />
-                </div>
-                <nav className="header__navigation">
-                    <ul className="header__navigation-list">
-                        <li>
+                <h1 className="header__logo">Logo</h1>
+                <div className="header__navigation">
+                    <div className="header__navigation_nav">
+                        <div className="header__navigation_nav_burger" onClick={toogleBurger}>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <nav className={burgerOpen ? "active" : ""}>
                             <a href='/'>Home</a>
-                        </li>
-                        <li>
-                            <a href='/'>Series</a>
-                        </li>
-                        <li>
-                            <a href='/'>Movies</a>
-                        </li>
-                        <li>
-                            <a href='/'>Pages</a>
-                        </li>
-                        <li>
-                            <a href='/'>Pricing</a>
-                        </li>
-                        <li>
-                            <a href='/'>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="header__account">
-                    <FontAwesomeIcon className="header__account-icon" icon={faMagnifyingGlass} />
-                    <FontAwesomeIcon className="header__account-icon" icon={faBell} />
-                    <FontAwesomeIcon className="header__account-icon" icon={faUser} />
-                    <button>Subscribe</button>
+                            <a href="">Genre</a>
+                            <a href="">Tag</a>
+                            <a href="">Movie</a>
+                            <a href="">TV Series</a>
+                        </nav>
+                    </div>
+                    <div className="header__search">
+                        <input type="text" placeholder="Search" />
+                    </div>
                 </div>
             </div>
         </header >
