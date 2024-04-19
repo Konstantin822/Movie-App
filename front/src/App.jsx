@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import { BrowserRouter, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Header from './components/Header/Header.jsx';
 import Home from './pages/Home/Home.jsx';
 import Footer from './components/Footer/Footer.jsx';
+
+import 'swiper/css';
+import 'swiper/css/scrollbar';
 
 function App() {
   return (
