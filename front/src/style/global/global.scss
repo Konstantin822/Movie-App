@@ -1,22 +1,9 @@
-html {
-    font-size: 1px;
-}
-
-body {
-    background-color: var(--color-black);
-    transition: background-image 0.5s ease-in-out;
-}
+body {}
 
 .container {
     width: 100%;
-    max-width: 700rem;
+    max-width: 1600rem;
     margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 1600rem;
-    }
 }
 
 .wrapper {

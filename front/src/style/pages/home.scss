@@ -1,115 +1,114 @@
-// Section hero
 .hero {
-    color: var(--color-white);
+    position: relative;
+    width: 100%;
+    min-height: 120vh;
+    padding: 0 100px;
+    transition: 0.5s;
 
     &__container {
+        padding: 0 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120vh;
         display: flex;
-        justify-content: center;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        font-size: 8rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    &__bg.active {
+        visibility: visible;
+        opacity: 1;
     }
 
     &__card {
-        width: 800rem;
-        background-color: rgba(40, 47, 51, 0.5);
-        display: flex;
-        flex-direction: column;
-        gap: 29rem;
-        margin-top: 100rem;
-        padding: 20rem 20rem;
-        border-radius: 20rem;
+        position: relative;
+        max-width: 600px;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0);
+        transition: 1s;
+        z-index: 100;
 
-        &_title {
-            font: var(--home-hero-title-font);
-            width: 457rem;
+        &-title {
+            font-size: 60px;
+            margin-bottom: 15px;
         }
 
-        &_info-desc1 {
-            font: var(--home-hero-card-desc1-font);
-            width: 351rem;
-            height: 20rem;
+        &-desc1 {
+            color: rgba(255, 255, 2555, 0.6);
+            font-weight: 400;
+            font-size: 20px;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
 
             p {
-                padding: 0 5rem;
+                padding: 0 10px;
+                border-right: 1px solid rgba(255, 255, 2555, 0.6);
             }
 
-            p:nth-child(2) {
-                border-left: 2rem solid var(--color-grey);
+            p:first-child {
+                padding-left: 0;
             }
 
-            p:nth-child(3) {
-                border-left: 2rem solid var(--color-grey);
-                border-right: 2rem solid var(--color-grey);
-            }
-
-            p:nth-child(4) {
-                border-right: 2rem solid var(--color-grey);
-            }
-
-        }
-
-        &_info-desc2 {
-            font: var(--home-hero-card-desc1-font);
-            display: flex;
-            flex-direction: column;
-            gap: 10rem;
-            margin: 10rem 0;
-
-            p {
-                padding-left: 5rem;
-            }
-
-            span {
-                margin-right: 10rem;
-
-                &:last-child {
-                    margin-right: 0;
-                }
+            p:last-child {
+                padding-right: 0;
+                border-right: none;
             }
         }
 
-        &_info-desc3 {
-            font: var(--home-hero-card-desc2-font);
-            padding-left: 5rem;
+        &-desc2 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: white;
+            margin: 10px 0 10px 0;
         }
 
-        &_buttons {
-            display: flex;
-            gap: 16rem;
-
-            &-btn {
-                width: 144rem;
-                height: 48rem;
-                color: var(--color-black);
-                border-radius: 8rem;
-                border: 1rem solid var(--color-grey);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
-
-            &-btn:nth-child(2) {
-                background: var(--color-yellow);
-            }
+        &-desc3 {
+            font-size: 20px;
+            font-weight: 300;
+            color: white;
+            margin-bottom: 10px;
         }
     }
 
-    @media only screen and (min-width: 768px) {
-        &__container {
-            display: block;
-        }
+    &__btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__card.active {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-// Section hero END
-
-// Section cards
-.cards {
-    margin-top: 50rem;
-
-}
-
-// Section cards END
+// .hero::after {
+//     position: absolute;
+//     content: '';
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, 0.6);
+// }

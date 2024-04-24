@@ -5,7 +5,6 @@ import Home from './pages/Home/Home.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 import 'swiper/css';
-import 'swiper/css/scrollbar';
 
 function App() {
   return (

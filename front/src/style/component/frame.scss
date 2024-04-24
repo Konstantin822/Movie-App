@@ -1,0 +1,32 @@
+.frame {
+    position: absolute;
+    content: '';
+    top: 270px;
+    left: 530px;
+    right: 530px;
+    bottom: 280px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: 20px;
+    }
+}
+
+.frame.active {
+    visibility: visible;
+    opacity: 1;
+}

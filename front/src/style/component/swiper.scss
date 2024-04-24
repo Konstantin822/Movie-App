@@ -1,31 +1,28 @@
-#app {
-    height: 100%;
-}
-
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
 .swiper {
-    width: 100%;
-    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.cardSwiper {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+    z-index: 200;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.8);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 200px;
 }
 
 .swiper-slide img {
+    display: block;
     width: 100%;
-    height: 700rem;
-    object-fit: cover;
 }

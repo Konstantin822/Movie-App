@@ -1,72 +1,70 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { homeData } from "../../data/homeData.js";
 
-import { homeData } from "../../data/homeData";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar } from 'swiper/modules';
-
-export function Card({ onSelect }) {
-    return (
-        <div className="cards__row">
-            <Swiper
-                scrollbar={{ hide: true }}
-                slidesPerView={3}
-                spaceBetween={10}
-                modules={[Scrollbar]}
-                className="mySwiper cards__slider">
-                {homeData.cards.map(item => (
-                    <SwiperSlide key={item.id} onClick={() => onSelect(item)}>
-                        <div className="cards__row_card">
-                            <img src={item.img} alt={item.name} />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
-    );
-}
+import Carousel from '../../components/Carousel/Carousel.jsx';
+import Frame from '../../components/Frame/Frame.jsx';
 
 export default function Home() {
-    const [selectCard, setSelectCard] = useState(homeData.cards[0])
+    const [info, setInfo] = useState([])
+    const [frame, setFrame] = useState(false)
 
     useEffect(() => {
-        document.body.style.backgroundImage = `url(${selectCard.cover})`
-        document.body.style.backgroundSize = 'cover'
-        document.body.style.backgroundPosition = 'center'
-        document.body.style.backgroundRepeat = 'no-repeat'
-    }, [selectCard])
+        setInfo(homeData.cards)
+    }, [])
+
+    const cardChange = id => {
+        const newInfo = info.map(item => {
+            item.active = false
+
+            if (item.id === id) {
+                item.active = true
+            }
+            return item
+        })
+        setInfo(newInfo)
+    }
+
+    const toggleFrame = () => {
+        setFrame(!frame)
+    }
+
     return (
         <>
             <section className="hero">
-                <div className="container hero__container">
-                    <div className="hero__card">
-                        <h1 className="hero__card_title">{selectCard.name}</h1>
-                        <div className="hero__card_info">
-                            <div className="hero__card_info-desc1">
-                                <p>{selectCard.type}</p>
-                                <p>{selectCard.rating}</p>
-                                <p>{selectCard.date}</p>
-                                <p>{selectCard.time}</p>
-                                <p>{selectCard.genre}</p>
+                {info && info.length > 0 && info.map(item => (
+                    <div className="container hero__container" key={item.id}>
+                        <img
+                            className={`hero__bg ${item.active ? 'active' : undefined}`}
+                            src={item.cover}
+                            alt="Background Image" />
+                        <div className={`hero__card ${item.active ? 'active' : undefined}`}>
+                            <h1 className="hero__card-title">{item.name}</h1>
+                            <div className="hero__card-desc1">
+                                <p>{item.type}</p>
+                                <p>{item.rating}</p>
+                                <p>{item.date}</p>
+                                <p>{item.time}</p>
+                                <p>{item.genre}</p>
                             </div>
-                            <div className="hero__card_info-desc2">
-                                <p>Tags: <span>{selectCard.tags.map((tag, index) => <span key={index}>{tag}</span>)}</span></p>
-                                <p>Starring: <span>{selectCard.starring}</span></p>
+                            <p className="hero__card-desc2">
+                                {item.desc}
+                            </p>
+                            <div className="hero__card-desc3">
+                                <p>Tags:
+                                    <span>{item.tags[0].tag1},</span>
+                                    <span>{item.tags[0].tag2},</span>
+                                    <span>{item.tags[0].tag3}</span>
+                                </p>
+                                <p>Starring: <span>{item.starring}</span></p>
                             </div>
-                            <p className="hero__card_info-desc3">{selectCard.desc}</p>
+                            <button className="hero__btn" onClick={toggleFrame}>
+                                Watch trailer
+                            </button>
                         </div>
-                        <div className="hero__card_buttons">
-                            <button className="hero__card_buttons-btn">Watch trailer</button>
-                            <button className="hero__card_buttons-btn">Watch now</button>
-                        </div>
+                        {item.active && (<Frame frame={item} status={frame} toggleFrame={toggleFrame} />)}
                     </div>
-                </div>
-            </section>
-
-            <section className="cards">
-                <div className="container cards__container">
-                    {/* Тут слайдер */}
-                    <Card onSelect={setSelectCard} />
-                </div>
+                ))}
+                {info && info.length > 0 && <Carousel cards={info} cardsChange={cardChange} />}
             </section>
         </>
     );
