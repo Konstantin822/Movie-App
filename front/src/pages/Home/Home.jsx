@@ -41,7 +41,7 @@ export default function Home() {
                             <h1 className="hero__card-title">{item.name}</h1>
                             <div className="hero__card-desc1">
                                 <p>{item.type}</p>
-                                <p>{item.rating}</p>
+                                <p>IMDb: {item.rating}</p>
                                 <p>{item.date}</p>
                                 <p>{item.time}</p>
                                 <p>{item.genre}</p>
@@ -55,7 +55,7 @@ export default function Home() {
                                     <span>{item.tags[0].tag2},</span>
                                     <span>{item.tags[0].tag3}</span>
                                 </p>
-                                <p>Starring: <span>{item.starring}</span></p>
+                                <p>Starring:<span>{item.starring}</span></p>
                             </div>
                             <button className="hero__btn" onClick={toggleFrame}>
                                 Watch trailer

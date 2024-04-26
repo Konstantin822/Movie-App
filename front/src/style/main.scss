@@ -8,8 +8,11 @@
 
 // Pages
 @import './pages/home.scss';
+@import './pages/movies.scss';
+@import './pages/tvSeries.scss';
 
 // Component
+@import './component/card.scss';
 @import './component/swiper.scss';
 @import './component/frame.scss';
 

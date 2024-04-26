@@ -1,0 +1,27 @@
+.series {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 500px);
+        gap: 20px;
+        position: relative;
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        position: absolute;
+        left: 28%;
+
+        select,
+        input,
+        button {
+            padding: 5px 10px;
+        }
+    }
+}
