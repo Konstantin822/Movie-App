@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
-import Card from '../../components/InfoCard/Card.jsx';
+import InfoCard from '../../components/InfoCard/InfoCard.jsx';
 
 export default function Movies() {
-    const [info, setInfo] = useState(homeData.cards.filter(card => card.type === "TV Series"))
+    const [info, setInfo] = useState([])
     const [selector, setSelector] = useState("--")
     const [search, setSearch] = useState("")
+
+    useEffect(() => {
+        setInfo(homeData.cards.filter(card => card.type === "Movie"))
+    }, [])
 
     const selectorChange = (item) => {
         setSelector(item.target.value)
@@ -17,7 +21,7 @@ export default function Movies() {
     }
 
     const searchBtn = () => {
-        let filterSeries = homeData.cards.filter(card => card.type === "TV Series")
+        let filterSeries = info
         if (selector !== "--" && search) {
             filterSeries = filterSeries.filter(card => {
                 if (selector === "Rating") {
@@ -34,7 +38,6 @@ export default function Movies() {
         setSearch("")
     }
 
-    const content = info.map(item => <Card key={item.id} content={item} />)
     return (
         <div className="series">
             <div className="container series__container">
@@ -48,7 +51,7 @@ export default function Movies() {
                     <input type="text" value={search} onChange={searchChange} placeholder="Search" />
                     <button onClick={searchBtn}>Search</button>
                 </div>
-                {content}
+                {info && info.length > 0 && info.map(item => <InfoCard key={item.id} content={item} />)}
             </div>
         </div>
     );

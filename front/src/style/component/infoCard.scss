@@ -1,18 +1,25 @@
-.card {
+.cards-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid grey;
     border-radius: 20px;
     margin-top: 50px;
-    display: none;
 
     img {
         height: 780px;
         border-radius: 20px;
     }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
 }
 
-.card.active {
-    display: flex;
-}
+// .cards-info.active {
+//     display: flex;
+// }

@@ -42,7 +42,7 @@ export default function Home() {
                             <div className="hero__card-desc1">
                                 <p>{item.type}</p>
                                 <p>IMDb: {item.rating}</p>
-                                <p>{item.date}</p>
+                                <p>{item.year}</p>
                                 <p>{item.time}</p>
                                 <p>{item.genre}</p>
                             </div>

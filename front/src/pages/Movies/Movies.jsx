@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
+import InfoCard from '../../components/InfoCard/InfoCard.jsx';
 import Card from '../../components/InfoCard/Card.jsx';
 
 export default function Movies() {
-    const [info, setInfo] = useState(homeData.cards.filter(card => card.type === "Movie"))
+    const [info, setInfo] = useState([])
     const [selector, setSelector] = useState("--")
     const [search, setSearch] = useState("")
+
+    useEffect(() => {
+        setInfo(homeData.cards.filter(card => card.type === "Movie"))
+    }, [])
 
     const selectorChange = (item) => {
         setSelector(item.target.value)
@@ -17,7 +22,7 @@ export default function Movies() {
     }
 
     const searchBtn = () => {
-        let filterMovies = homeData.cards.filter(card => card.type === "Movie")
+        let filterMovies = info
         if (selector !== "--" && search) {
             filterMovies = filterMovies.filter(card => {
                 if (selector === "Rating") {
@@ -34,10 +39,23 @@ export default function Movies() {
         setSearch("")
     }
 
-    const content = info.map(item => <Card key={item.id} content={item} />)
+    const cardRender = id => {
+        const newInfo = info.map(card => {
+            card.active = false
+
+            if (card.id === id) {
+                card.active = true
+            }
+            return card
+        })
+
+        setInfo(newInfo)
+    }
+
     return (
         <div className="movies">
             <div className="container movies__container">
+                {info && info.length > 0 && (<Card content={info} cardsRender={cardRender} />)}
                 <div className="movies__filter">
                     <select value={selector} onChange={selectorChange}>
                         <option>--</option>
@@ -48,7 +66,7 @@ export default function Movies() {
                     <input type="text" value={search} onChange={searchChange} placeholder="Search" />
                     <button onClick={searchBtn}>Search</button>
                 </div>
-                {content}
+                {info && info.length > 0 && (<InfoCard content={info} cardsRender={cardRender} />)}
             </div>
         </div>
     );
