@@ -8,6 +8,7 @@ export default function Movies() {
     const [info, setInfo] = useState([])
     const [selector, setSelector] = useState("--")
     const [search, setSearch] = useState("")
+    // const [showCards, setShowCards] = useState(true)
 
     useEffect(() => {
         setInfo(homeData.cards.filter(card => card.type === "Movie"))
@@ -50,23 +51,24 @@ export default function Movies() {
         })
 
         setInfo(newInfo)
+        // setShowCards(false)
     }
 
     return (
         <div className="movies">
             <div className="container movies__container">
-                {info && info.length > 0 && (<Card content={info} cardsRender={cardRender} />)}
-                <div className="movies__filter">
-                    <select value={selector} onChange={selectorChange}>
-                        <option>--</option>
-                        <option>Rating</option>
-                        <option>Genre</option>
-                        <option>Year</option>
-                    </select>
-                    <input type="text" value={search} onChange={searchChange} placeholder="Search" />
-                    <button onClick={searchBtn}>Search</button>
-                </div>
-                {info && info.length > 0 && (<InfoCard content={info} cardsRender={cardRender} />)}
+                {info && info.length > 0 && <Card content={info} />}
+
+                {/* {showCards && info && info.length > 0 && <InfoCard content={info} cardsRender={cardRender} />} */}
+                {info && info.length > 0 && <InfoCard
+                    content={info}
+                    cardsRender={cardRender}
+                    selector={selector}
+                    selectorChange={selectorChange}
+                    search={search}
+                    searchChange={searchChange}
+                    searchBtn={searchBtn}
+                />}
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
 import InfoCard from '../../components/InfoCard/InfoCard.jsx';
+import Card from '../../components/InfoCard/Card.jsx';
 
 export default function Movies() {
     const [info, setInfo] = useState([])
@@ -9,7 +10,7 @@ export default function Movies() {
     const [search, setSearch] = useState("")
 
     useEffect(() => {
-        setInfo(homeData.cards.filter(card => card.type === "Movie"))
+        setInfo(homeData.cards.filter(card => card.type === "TV Series"))
     }, [])
 
     const selectorChange = (item) => {
@@ -38,20 +39,31 @@ export default function Movies() {
         setSearch("")
     }
 
+    const cardRender = id => {
+        const newInfo = info.map(card => {
+            card.active = false
+
+            if (card.id === id) {
+                card.active = true
+            }
+            return card
+        })
+
+        setInfo(newInfo)
+    }
+
     return (
         <div className="series">
             <div className="container series__container">
-                <div className="series__filter">
-                    <select value={selector} onChange={selectorChange}>
-                        <option>--</option>
-                        <option>Rating</option>
-                        <option>Genre</option>
-                        <option>Year</option>
-                    </select>
-                    <input type="text" value={search} onChange={searchChange} placeholder="Search" />
-                    <button onClick={searchBtn}>Search</button>
-                </div>
-                {info && info.length > 0 && info.map(item => <InfoCard key={item.id} content={item} />)}
+                {info && info.length > 0 && <Card content={info} />}
+                {info && info.length > 0 && <InfoCard
+                    content={info}
+                    cardsRender={cardRender}
+                    selector={selector}
+                    selectorChange={selectorChange}
+                    search={search}
+                    searchChange={searchChange}
+                    searchBtn={searchBtn} />}
             </div>
         </div>
     );
