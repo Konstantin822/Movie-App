@@ -1,19 +1,21 @@
 .card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    border: 2px solid grey;
-    border-radius: 20px;
-    margin: 50px 0 0 70px;
-    display: none;
+    margin: 50px 0 50px 70px;
+    gap: 50px;
 
     img {
-        height: 780px;
+        height: 750px;
+        max-width: 500px;
         border-radius: 20px;
     }
-}
 
-.card.active {
-    display: block;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            width: 500px;
+        }
+    }
 }

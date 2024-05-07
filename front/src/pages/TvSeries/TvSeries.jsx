@@ -55,7 +55,6 @@ export default function Movies() {
     return (
         <div className="series">
             <div className="container series__container">
-                {info && info.length > 0 && <Card content={info} />}
                 {info && info.length > 0 && <InfoCard
                     content={info}
                     cardsRender={cardRender}

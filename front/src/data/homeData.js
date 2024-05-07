@@ -20,7 +20,7 @@ export const homeData = {
             ],
             video: "https://www.youtube.com/embed/8g18jFHCLXk?si=eLnLUvlX2tt5_e_Y",
             year: 2021,
-            active: true,
+            active: false,
         },
         {
             id: 2,
@@ -150,7 +150,7 @@ export const homeData = {
             ],
             video: "https://www.youtube.com/embed/vaN8BtA8OJk?si=pQZVgsFR8ISlCtPO",
             year: 2019,
-            active: false,
+            active: true,
         },
         {
             id: 8,

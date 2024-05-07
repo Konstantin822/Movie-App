@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 500px);
     gap: 30px;
     justify-content: center;
-    margin-top: 20px;
+    margin: 40px 0;
 
     &__filter {
         display: flex;
@@ -27,6 +27,8 @@
         align-items: center;
         border: 2px solid grey;
         border-radius: 20px;
+        color: white;
+        text-decoration: none;
 
         img {
             height: 780px;
