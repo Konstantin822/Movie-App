@@ -9,6 +9,7 @@ export const homeData = {
             rating: 8.0,
             time: "2hr : 35m",
             desc: "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
+            desc2: "Humanity has spread across distant planets, and various powerful families constantly vie for control over inhabited space. At the center of the conflict lies the desert planet Arrakis. There, giant sandworms roam the deserts, and in the caves dwell the nomadic Fremen, but its main value is spice, the most important substance in the Universe. Whoever controls Arrakis controls the spice, and whoever controls the spice controls the Universe.",
             starring: "Timothée Chalamet, Rebecca Ferguson, Zendaya",
             genre: "Action",
             tags: [
@@ -31,6 +32,7 @@ export const homeData = {
             rating: 6.7,
             time: "1hr : 58m",
             desc: "After the Vietnam war, a team of scientists explores an uncharted island in the Pacific, venturing into the domain of the mighty Kong and must fight to escape a primal Eden.",
+            desc2: "A team of scientists, soldiers, and adventurers find themselves stranded on an unknown island in the Pacific Ocean. They trespass into the territory of the mighty Kong, thereby unleashing a battle between man and nature. Soon, the scientific mission turns into a fight for survival, forcing its participants to literally carve out a path to safety.",
             starring: "Tom Hiddleston, Samuel L. Jackson, Brie Larson",
             genre: "Action",
             tags: [
@@ -53,6 +55,7 @@ export const homeData = {
             rating: 8.4,
             time: "15m",
             desc: "A collection of animated short stories that span various genres including science fiction, fantasy, horror and comedy.",
+            desc2: "The series consists of individual short episodes, each lasting less than half an hour. It is worked on by different casts and crews, although some episodes may involve the same studios in their creation. The title of the series indicates the thematic connection of each episode to the three aforementioned themes, although not every episode contains all three elements. At the beginning of each episode, the original three icons of the series (heart symbolizing 'love'; diagonal cross symbolizing 'death'; robot emoticon symbolizing 'robots') are replaced by three others, which symbolize the plot of that particular episode.",
             starring: "Fred Tatsciore, Scott Whyte, Nolan North",
             genre: "Animation",
             tags: [
@@ -75,6 +78,7 @@ export const homeData = {
             rating: 8.5,
             time: "1hr",
             desc: "The disappearance of rich-girl-turned-political-activist links the lives of Ceres detective, accidental ship captain and U.N. politician. Amidst political tension between Earth, Mars and the Belt, they unravel the greatest conspiracy.",
+            desc2: "The series is set hundreds of years in the future, where the Solar System has been colonized by humans. Mars has gained independence, the asteroid belt is divided into zones controlled by Earth and Mars, and Ceres serves as a major transportation hub under Earth's jurisdiction. Detective Josephus Miller, based on Ceres, is tasked with finding the missing girl Julie Andromeda Mao, daughter of an influential figure. Meanwhile, the crew of the cargo ship 'Canterbury' returning to Ceres with a load of ice, receives a distress signal and sends a rescue shuttle under the command of second officer James Holden. Shortly after, the 'Canterbury' is attacked by an unknown ship, leaving only five crew members alive: Holden, engineer Naomi Nagata, pilot Alex Kamal, mechanic Amos Burton, and medic Shed Garvey. The survivors are picked up by a Martian warship, but it too comes under attack soon after.",
             starring: "Steven Strait, Dominique Tipper, Wes Chatham",
             genre: "Sci-fi",
             tags: [
@@ -97,6 +101,7 @@ export const homeData = {
             rating: 7.6,
             time: "1hr",
             desc: "A complex saga of humans scattered on planets throughout the galaxy all living under the rule of the Galactic Empire.",
+            desc2: "The literary basis for the series is Isaac Asimov's 'Foundation' series. It is set in the Galactic Empire, which spans the entire Milky Way. Scientist Hari Seldon predicts the collapse of this state and creates the organization 'Foundation' which is tasked with rebuilding civilization after this catastrophe.",
             starring: "Jared Harris, Lou Llobell, Leah Harvey",
             genre: "Sci-fi",
             tags: [
@@ -113,11 +118,12 @@ export const homeData = {
             id: 6,
             img: "../images/deadpool3.jpg",
             cover: "../covers/deadpool.jpg",
-            name: "Deadpool & Wolverine",
+            name: "Deadpool 3",
             type: "Movie",
             rating: "",
             time: "",
             desc: "Wolverine is recovering from his injuries when he crosses paths with the loudmouth, Deadpool. They team up to defeat a common enemy.",
+            desc2: "«Deadpool 3»  (original title Deadpool 3, 2024) is a fantastical action film that continues the story of the unpredictable and sarcastic superhero. In this third installment, audiences will once again dive into a world of relentless action and quirky humor that has become characteristic of the Deadpool saga. The plot unfolds several years after the events of the previous installment, as Deadpool finds himself in the most dangerous and incredible situation yet. This time, he must battle new enemies and investigate mysterious crimes that threaten all of humanity. As always, Deadpool is no different from his usual self - effortlessly firing sharp jokes at himself, those around him, and the entertainment industry as a whole. His invulnerability and ability to recover from any injury make him virtually unbeatable, while his wit and ease with weapons make him a true master of combat.",
             starring: "Ryan Reynolds, Hugh Jackman, Emma Corin",
             genre: "Comedy",
             tags: [
@@ -140,6 +146,7 @@ export const homeData = {
             rating: 7.8,
             time: "1hr : 53m",
             desc: "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+            desc2: "A talented Oxford graduate, using his unique intellect and unprecedented audacity, devised an illegal scheme to enrich himself by exploiting the estates of impoverished English aristocracy. However, when he decides to sell his business to an influential clan of billionaires from the United States, he encounters equally charming but ruthless gentlemen in his path. A courteous exchange is planned, which surely won't be complete without shootouts and a couple of unfortunate accidents.",
             starring: "Matthew McConaughey, Charlie Hunnam, Michelle Dockery",
             genre: "Crime",
             tags: [
@@ -161,6 +168,7 @@ export const homeData = {
             rating: 6.2,
             time: "1hr : 43m",
             desc: "At an Antarctica research site, the discovery of an alien craft leads to a confrontation between graduate student Kate Lloyd and scientist Dr. Sander Halvorson.",
+            desc2: "Set in Antarctica, the film follows a group of Norwegian and American scientists who unearth a mysterious alien spacecraft buried in the ice. They also discover an extraterrestrial creature frozen nearby. As they attempt to study and thaw out the creature, it escapes and begins to attack the researchers, assimilating and imitating them perfectly.",
             starring: "Mary Elizabeth Winstead, Joel Edgerton, Ulrich Thomsen",
             genre: "Horror",
             tags: [
@@ -183,6 +191,7 @@ export const homeData = {
             rating: 8.7,
             time: "2hr : 46m",
             desc: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+            desc2: "Paul Atreides continues his journey through the dangerous sandy deserts, encountering new allies and enemies along the way. His strength and abilities only grow stronger, and he is prepared to face any challenges to protect his planet and people. The film vividly portrays the world of Dune with its stunning landscapes, exotic creatures, and political intrigues. Audiences can expect gripping plot twists and unexpected developments that will keep them on the edge of their seats until the very end.",
             starring: "Timothée Chalamet, Rebecca Ferguson, Zendaya",
             genre: "Action",
             tags: [
@@ -205,6 +214,7 @@ export const homeData = {
             rating: 7.3,
             time: "2hr",
             desc: "The British military recruits a small group of highly skilled soldiers to strike against German forces behind enemy lines during World War II.",
+            desc2: "The film tells the story of the creation of a secret organization during World War II, tasked with waging an unconventional war against the enemy. A group of unusual heroes will face incredible trials and dangers to protect their country. The story is filled with dynamics, tension, and unexpected twists. Audiences will be on the edge of their seats as they follow the heroes through all the trials and battles. True courage and selflessness of real heroes will be showcased.",
             starring: "Henry Cavill, Alan Ritchson, Alex Pettyfer",
             genre: "Action",
             tags: [
@@ -227,6 +237,7 @@ export const homeData = {
             rating: 6.8,
             time: "2hr : 13m",
             desc: "Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the secret weapon, a robot in the form of a young child.",
+            desc2: "Against the backdrop of a future war between humanity and artificial intelligence forces, Joshua, a battle-hardened former operative, experiences the disappearance of his wife. Now, he must find and destroy the Creator – the elusive architect who created the artificial intelligence and a mysterious weapon capable of ending the war and humanity itself.",
             starring: "John David Washington, Madeleine Yuna Voyles, Gemma Chan",
             genre: "Action",
             tags: [
@@ -249,6 +260,7 @@ export const homeData = {
             rating: 8.5,
             time: "45m",
             desc: "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore--and raid--the distant shores across the ocean.",
+            desc2: "The series is not strictly historical and freely interprets the Scandinavian sagas of Viking raids on Anglo-Saxon Britain, the West Frankish Kingdom, and other lands. The flexibility of «Vikings» is evident in the discrepancy of many dates and the combination of historical figures who lived in different time periods. The central character of the plot is the semi-legendary Scandinavian king Ragnar Lothbrok, who is said to trace his lineage back to the god Odin. In addition to Ragnar, the protagonists also include his sons, friends, wives Lagertha and Aslaug, and other historical figures, such as the Norwegian king Harald Finehair or the King of Wessex, Alfred the Great. The action begins with the drama of one Viking and gradually escalates into an epic story of kingdom wars. The series also includes a mystical component: visionary characters, spiritual connections between loved ones, ghosts, and even manifestations of gods.",
             starring: "Travis Fimmel, Katheryn Winnick, Alexander Ludwig",
             genre: "Adventure",
             tags: [
@@ -271,6 +283,7 @@ export const homeData = {
             rating: 7.5,
             time: "1hr : 30m",
             desc: "A family struggles for survival in a world where most humans have been killed by blind but noise-sensitive creatures. They are forced to communicate in sign language to keep the creatures at bay.",
+            desc2: "The story of a family living on a small secluded farm in the remote American countryside. The main characters have two children. At first glance, their lives seem no different from those of other such families. However, the main characters live in a house filled with terrifying monsters that react to any sound. The heroes have learned a whole set of special gestures that help them communicate with each other without making a single sound. Additionally, each member of the family must move very quietly throughout the house to avoid being noticed by the dangerous creatures. However, a house where small children live cannot be the quietest place on earth.",
             starring: "Emily Blunt, John Krasinski, Millicent Simmonds",
             genre: "Horror",
             tags: [
@@ -293,6 +306,7 @@ export const homeData = {
             rating: 7.4,
             time: "1hr : 41m",
             desc: "An ex-hitman comes out of retirement to track down the gangsters who killed his dog and stole his car.",
+            desc2: "The film follows the story of John Wick, a retired hitman seeking vengeance for the killing of his beloved dog, given to him by his deceased wife. The dog was a final gift from his wife, who passed away from an illness. Wick's quest for revenge leads him into conflict with a powerful Russian crime syndicate.",
             starring: "Keanu Reeves, Michael Nyqvist, Alfie Allen",
             genre: "Thriller",
             tags: [
@@ -315,6 +329,7 @@ export const homeData = {
             rating: 6.4,
             time: "2hr : 2m",
             desc: "The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.",
+            desc2: "During the exploration of a remote planet located on the other side of the galaxy, the crew of the colonial ship «Covenant» discovers that what they initially thought to be an uncharted paradise is actually a dark and dangerous world. Its sole inhabitant is the synthetic android David, who survived a doomed expedition mission called «Prometheus».",
             starring: "Michael Fassbender, Katherine Waterston, Billy Crudup",
             genre: "Horror",
             tags: [
@@ -337,6 +352,7 @@ export const homeData = {
             rating: 7.4,
             time: "2hr : 2m",
             desc: "After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life.",
+            desc2: "John Wick is forced out of retirement once again when a former associate seeks to seize control of an international assassins' guild. Bound by a blood oath to help him, Wick travels to Rome, where he faces off against some of the world's deadliest killers in a high-stakes battle for survival.",
             starring: "Keanu Reeves, Riccardo Scamarcio, Ian McShane",
             genre: "Thriller",
             tags: [
@@ -359,6 +375,7 @@ export const homeData = {
             rating: 7.4,
             time: "2hr : 10m",
             desc: "John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.",
+            desc2: "John Wick finds himself on the run after killing a member of the international assassins' guild, the High Table, on the grounds of the Continental Hotel. With a $14 million bounty on his head, Wick must fight his way through waves of assassins as he attempts to escape New York City. Along the way, he seeks assistance from allies and delves deeper into the secretive world of assassins and criminal syndicates.",
             starring: "Keanu Reeves, Halle Berry, Ian McShane",
             genre: "Thriller",
             tags: [
@@ -381,6 +398,7 @@ export const homeData = {
             rating: 7.1,
             time: "1hr : 40m",
             desc: "Naru, a skilled warrior of the Comanche Nation, fights to protect her tribe against one of the first highly-evolved Predators to land on Earth.",
+            desc2: "The Great Plains, 1719. Naru, a girl from the Comanche tribe, wants more than anything to become a skilled hunter, but her family doesn't take her passion seriously. When a group of experienced hunters ventures into the forest to search for a fellow tribesman attacked by a mountain lion, Naru, as a skilled tracker, joins them and soon notices strange tracks. While the rescue of their comrade is successful, Naru's encounter with the wild cat doesn't go as well.",
             starring: "Amber Midthunder, Dakota Beavers, Dane DiLiegro",
             genre: "Action",
             tags: [
@@ -403,6 +421,7 @@ export const homeData = {
             rating: 7.7,
             time: "2hr : 49m",
             desc: "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+            desc2: "At last, John's violent journey, fuelled by vengeance and grief, ultimately leads him to a fateful confrontation with his former employers, the crime masters that forced him into exile. And as the blood-stained vendetta to destroy those who pull the strings continues, old companions face the brutal consequences of friendship, and all-powerful, well-connected adversaries emerge to bring Wick's head on a platter. But talk is cheap--now guns have the final say. Baba Yaga, the grim messiah of death, must make every bullet count in this bloody, once-and-for-all struggle for freedom.",
             starring: "Keanu Reeves, Laurence Fishburne, George Georgiou",
             genre: "Thriller",
             tags: [
@@ -425,6 +444,7 @@ export const homeData = {
             rating: 8.4,
             time: "59m",
             desc: "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+            desc2: "The Targaryen dynasty is at the absolute apex of its power, with more than 10 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
             starring: "Matt Smith, Emma D'Arcy, Olivia Cooke",
             genre: "Drama",
             tags: [
@@ -447,6 +467,7 @@ export const homeData = {
             rating: 7.9,
             time: "55m",
             desc: "A former Navy SEAL officer investigates why his entire platoon was ambushed during a high-stakes covert mission.",
+            desc2: "The series follows James Reece after his entire platoon of Navy SEALs is ambushed during a high-stakes covert mission. Reece returns home to his family with conflicting memories of the event and questions about his culpability. However, as new evidence comes to light, Reece discovers dark forces working against him, endangering not only his life but the lives of those he loves.",
             starring: "Chris Pratt, Constance Wu, Taylor Kitsch",
             genre: "Thriller",
             tags: [

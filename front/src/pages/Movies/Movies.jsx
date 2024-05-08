@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
 import InfoCard from '../../components/InfoCard/InfoCard.jsx';
-import Card from '../../components/InfoCard/Card.jsx';
 
 export default function Movies() {
     const [info, setInfo] = useState([])
@@ -22,17 +21,20 @@ export default function Movies() {
     }
 
     const searchBtn = () => {
+        setSelector("--")
         let filterMovies = info
-        if (selector !== "--" && search) {
+        if (selector != "--" && search) {
             filterMovies = filterMovies.filter(card => {
-                if (selector === "Rating") {
-                    return card.rating.toString() === search
-                } else if (selector === "Genre") {
-                    return card.genre.toLowerCase().includes(search.toLowerCase())
-                } else if (selector === "Year") {
-                    return card.year.toString() === search
+                switch (selector) {
+                    case "Rating":
+                        return card.rating.toString() === search
+                    case "Genre":
+                        return card.genre.toLowerCase().includes(search.toLowerCase())
+                    case "Year":
+                        return card.year.toString() === search
+                    default:
+                        return true
                 }
-                return true
             })
         }
         setInfo(filterMovies)

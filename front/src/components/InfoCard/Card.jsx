@@ -22,7 +22,7 @@ export default function Card() {
                     <p>Year: {cardInfo.year}</p>
                 </div>
                 <p className="card__info-desc2">
-                    {cardInfo.desc}
+                    {cardInfo.desc2}
                 </p>
             </div>
         </div>
