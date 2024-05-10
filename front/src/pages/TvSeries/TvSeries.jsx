@@ -12,18 +12,9 @@ export default function Movies() {
         setInfo(homeData.cards.filter(card => card.type === "TV Series"))
     }, [])
 
-    const selectorChange = (item) => {
-        setSelector(item.target.value)
-    }
-
-    const searchChange = (item) => {
-        setSearch(item.target.value)
-    }
-
-    const searchBtn = () => {
-        setSelector("--")
-        let filterSeries = info
-        if (selector !== "--" && search) {
+    const filter = () => {
+        let filterSeries = homeData.cards.filter(card => card.type === "TV Series")
+        if (selector != "--" && search) {
             filterSeries = filterSeries.filter(card => {
                 switch (selector) {
                     case "Rating":
@@ -38,10 +29,23 @@ export default function Movies() {
             })
         }
         setInfo(filterSeries)
+        setSelector("--")
+    }
+
+    const selectorChange = (item) => {
+        setSelector(item.target.value)
+    }
+
+    const searchChange = (item) => {
+        setSearch(item.target.value)
+    }
+
+    const searchBtn = () => {
+        filter()
         setSearch("")
     }
 
-    const cardRender = id => {
+    const cardRender = (id) => {
         const newInfo = info.map(card => {
             card.active = false
 
@@ -50,7 +54,6 @@ export default function Movies() {
             }
             return card
         })
-
         setInfo(newInfo)
     }
 

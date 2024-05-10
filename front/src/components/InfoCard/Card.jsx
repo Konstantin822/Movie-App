@@ -24,6 +24,17 @@ export default function Card() {
                 <p className="card__info-desc2">
                     {cardInfo.desc2}
                 </p>
+                <iframe
+                    width="760"
+                    height="490"
+                    src={cardInfo.video}
+                    title={cardInfo.name}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
             </div>
         </div>
 

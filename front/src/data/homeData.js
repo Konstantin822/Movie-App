@@ -243,7 +243,7 @@ export const homeData = {
             tags: [
                 {
                     tag1: "Action",
-                    tag2: "Adventure",
+                    tag2: "Sci-fi",
                     tag3: "Drama",
                 },
             ],
