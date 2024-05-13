@@ -5,18 +5,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 100px;
+        padding: 30px 80px;
         transition: 0.5s;
         z-index: 100;
     }
-
-    // .header__container.scrolled {
-    //     background: rgba(0, 0, 0, 0.6);
-    //     border-bottom: 2px solid grey;
-    //     border-image: linear-gradient(90deg, transparent, grey, transparent) 30;
-    //     backdrop-filter: blur(20px);
-    //     padding: 10px 100px;
-    // }
 
     .header__logo {
         font-size: 35px;
@@ -27,8 +19,17 @@ header {
         text-transform: uppercase;
     }
 
-    .header__nav-list {
-        display: flex;
+    .header__nav-sidebar {
+        position: fixed;
+        top: 7px;
+        right: 0;
+        width: 250px;
+        z-index: 200;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: black;
 
         li {
             list-style: none;
@@ -37,10 +38,8 @@ header {
             border-radius: 10px;
         }
 
-        li:hover,
-        li:active {
-            background-color: red;
-            transition: 0.8s;
+        li:first-child {
+            cursor: pointer;
         }
 
         li a {
@@ -51,6 +50,47 @@ header {
             letter-spacing: 1px;
             cursor: pointer;
             transition: 0.3s;
+        }
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+            margin: 0 10px;
+            padding: 10px 12px;
+            border-radius: 10px;
+        }
+
+        li:last-child {
+            display: none;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        li a {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+
+    @media (max-width:576px) {
+        .hide {
+            display: none;
+        }
+
+        .header__nav-list li:last-child {
+            display: block;
         }
     }
 }

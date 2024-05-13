@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     min-height: 120vh;
-    padding: 0 100px;
     transition: 0.5s;
 
     &__container {
@@ -111,18 +110,91 @@
     &__card.active {
         visibility: visible;
         opacity: 1;
-        transform: scale(1);
+    }
+
+    @media (max-width: 576px) {
+
+        &__container {
+            justify-content: center;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 1s;
+            z-index: 100;
+
+            &-title {
+                font-size: 30px;
+            }
+
+            &-desc1 {
+                color: rgba(255, 255, 2555, 0.6);
+                font-weight: 200;
+                font-size: 18px;
+                display: flex;
+
+                p {
+                    padding: 0 10px;
+                    border-right: 1px solid rgba(255, 255, 2555, 0.6);
+                }
+
+                p:first-child {
+                    padding-left: 0;
+                }
+
+                p:last-child {
+                    padding-right: 0;
+                    border-right: none;
+                }
+            }
+
+            &-desc2 {
+                font-size: 17px;
+                font-weight: 200;
+                line-height: 1.3em;
+                color: white;
+
+            }
+
+            &-desc3 {
+                font-size: 17px;
+                font-weight: 300;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                p span {
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        &__btn {
+            max-width: 120px;
+            padding: 10px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        &__btn:hover {
+            background-color: red;
+            color: white;
+        }
+
+        &__card.active {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
-
-// .hero::after {
-//     position: absolute;
-//     content: '';
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: rgba(0, 0, 0, 0.6);
-// }

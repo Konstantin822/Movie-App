@@ -3,4 +3,10 @@
     &__container {
         width: 1700px;
     }
+
+    @media (max-width: 576px) {
+        &__container {
+            width: 500px;
+        }
+    }
 }
