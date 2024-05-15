@@ -33,17 +33,19 @@ export default function Card() {
                     {cardInfo.desc2}
                 </p>
             </div>
-            <iframe
-                width="1100"
-                height="610"
-                src={cardInfo.video}
-                title={cardInfo.name}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; 
+            <div className="card__frame">
+                <iframe
+                    width="1100"
+                    height="610"
+                    src={cardInfo.video}
+                    title={cardInfo.name}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-            ></iframe>
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+            </div>
         </div>
 
     );

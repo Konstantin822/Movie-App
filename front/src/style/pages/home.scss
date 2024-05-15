@@ -1,15 +1,10 @@
 .hero {
     position: relative;
-    width: 100%;
     min-height: 120vh;
-    transition: 0.5s;
 
     &__container {
         padding: 0 100px;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         display: flex;
         padding-top: 100px;
     }
@@ -18,11 +13,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: 120vh;
         object-fit: cover;
         object-position: center;
-        font-size: 8rem;
         visibility: hidden;
         opacity: 0;
         transition: 1s;
@@ -37,9 +30,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        max-width: 600px;
+        max-width: 650px;
         padding: 20px;
-        background: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
         border-radius: 30px;
         visibility: hidden;
@@ -48,14 +41,15 @@
         z-index: 100;
 
         &-title {
-            font-size: 55px;
+            font: var(--home-hero-card-title-font);
+            letter-spacing: 1.6px;
             color: white;
         }
 
         &-desc1 {
             color: rgba(255, 255, 2555, 0.6);
-            font-weight: 400;
-            font-size: 20px;
+            font: var(--home-hero-card-desc1-font);
+            letter-spacing: 0.5px;
             display: flex;
 
             p {
@@ -74,16 +68,15 @@
         }
 
         &-desc2 {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5em;
+            font: var(--home-hero-card-desc2-font);
+            letter-spacing: 1px;
             color: white;
 
         }
 
         &-desc3 {
-            font-size: 20px;
-            font-weight: 300;
+            font: var(--home-hero-card-desc3-font);
+            letter-spacing: 0.5px;
             color: white;
             display: flex;
             flex-direction: column;
@@ -125,22 +118,22 @@
             gap: 15px;
             max-width: 600px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             border-radius: 30px;
             visibility: hidden;
             opacity: 0;
-            transition: 1s;
             z-index: 100;
 
             &-title {
-                font-size: 30px;
+                font: var(--home-hero-card-title-mobile-font);
             }
 
             &-desc1 {
                 color: rgba(255, 255, 2555, 0.6);
-                font-weight: 200;
-                font-size: 18px;
+                font: var(--home-hero-card-desc1-mobile-font);
+                letter-spacing: 0.2px;
                 display: flex;
 
                 p {
@@ -159,16 +152,13 @@
             }
 
             &-desc2 {
-                font-size: 17px;
-                font-weight: 200;
-                line-height: 1.3em;
+                font: var(--home-hero-card-desc2-mobile-font);
                 color: white;
 
             }
 
             &-desc3 {
-                font-size: 17px;
-                font-weight: 300;
+                font: var(--home-hero-card-desc3-mobile-font);
                 color: white;
                 display: flex;
                 flex-direction: column;

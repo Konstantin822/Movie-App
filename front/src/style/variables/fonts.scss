@@ -5,15 +5,38 @@
     --roboto-font: 'Roboto', sans-serif;
 
     // Global Fonts
-    --button-font: 500 16rem/19rem var(--roboto-font);
+    --button-font: 500 16px/19px var(--roboto-font);
 
     // Header Fonts
-    --header-logo-font: 700 20rem/24rem var(--roboto-font);
-    --header-nav-font: 400 18rem/21rem var(--roboto-font);
-    --header-input-font: 300 16rem/18rem var(--roboto-font);
+    --header-logo-font: 700 35px/normal var(--roboto-font);
+    --header-nav-font: 400 20px/normal var(--roboto-font);
+    --header-mobile-nav-font: 300 16px/normal var(--roboto-font);
 
     // Home Fonts
-    --home-hero-title-font: 600 72rem/86rem var(--roboto-font);
-    --home-hero-card-desc1-font: 400 14rem/17rem var(--roboto-font);
-    --home-hero-card-desc2-font: 400 16rem/160% var(--roboto-font);
+    --home-hero-card-title-font: 700 55px/normal var(--roboto-font);
+    --home-hero-card-desc1-font: 400 20px/normal var(--roboto-font);
+    --home-hero-card-desc2-font: 400 20px/1.5em var(--roboto-font);
+    --home-hero-card-desc3-font: 300 18px/normal var(--roboto-font);
+
+    --home-hero-card-title-mobile-font: 500 30px/normal var(--roboto-font);
+    --home-hero-card-desc1-mobile-font: 300 15px/normal var(--roboto-font);
+    --home-hero-card-desc2-mobile-font: 400 17px/normal var(--roboto-font);
+    --home-hero-card-desc3-mobile-font: 300 17px/normal var(--roboto-font);
+
+    // Components Fonts
+    --infoCard-cards-title-font: 500 28px/normal var(--roboto-font);
+    --infoCard-cards-desc-font: 300 20px/normal var(--roboto-font);
+    --infoCard-cards-mobile-title-font: 600 14px/normal var(--roboto-font);
+    --infoCard-cards-mobile-desc-font: 300 12px/normal var(--roboto-font);
+
+    --card-title-font: 700 50px/normal var(--roboto-font);
+    --card-desc1-font: 300 16px/normal var(--roboto-font);
+    --card-desc2-font: 400 23px/35px var(--roboto-font);
+    --card-mobile-title-font: 700 30px/normal var(--roboto-font);
+    --card-mobile-desc1-font: 300 14px/normal var(--roboto-font);
+    --card-mobile-desc2-font: 300 20px/25px var(--roboto-font);
+
+    // Footer Fonts 
+    --footer-title-font: 500 35px/normal var(--roboto-font);
+    --footer-link-font: 400 20px/normal var(--roboto-font);
 }

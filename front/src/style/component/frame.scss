@@ -2,17 +2,14 @@
     position: absolute;
     left: 530px;
     right: 530px;
-    padding: 40px 0;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 0 20px 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
     z-index: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: 1s;
 
     &__close {
         position: absolute;
@@ -32,20 +29,19 @@
 @media (max-width: 576px) {
     .frame {
         position: absolute;
-        padding: 40px 0 20px 0;
+        padding: 40px 15px 20px 15px;
         left: 8%;
         right: 8%;
-        background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(20px);
         box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
         z-index: 300;
         visibility: hidden;
         opacity: 0;
-        transition: 1s;
 
         iframe {
-            width: 420px;
+            width: 520px;
             height: 300px;
+
         }
 
         &__close {
@@ -53,7 +49,6 @@
             top: 10px;
             left: 30px;
             cursor: pointer;
-            color: var(--color-white);
             font-size: 20px;
         }
     }
