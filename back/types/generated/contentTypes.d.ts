@@ -362,6 +362,50 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiHomeCollectionHomeCollection extends Schema.CollectionType {
+  collectionName: 'home_collections';
+  info: {
+    singularName: 'home-collection';
+    pluralName: 'home-collections';
+    displayName: 'homeCollection';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    img: Attribute.Media;
+    cover: Attribute.Media;
+    name: Attribute.String;
+    type: Attribute.String;
+    rating: Attribute.Float;
+    time: Attribute.String;
+    desc: Attribute.Text;
+    desc2: Attribute.Text;
+    starring: Attribute.String;
+    genre: Attribute.String;
+    tags: Attribute.String;
+    year: Attribute.BigInteger;
+    active: Attribute.Boolean & Attribute.DefaultTo<false>;
+    video: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-collection.home-collection',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-collection.home-collection',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -788,186 +832,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiHomeDataApiHomeDataApi extends Schema.CollectionType {
-  collectionName: 'home_data_apis';
-  info: {
-    singularName: 'home-data-api';
-    pluralName: 'home-data-apis';
-    displayName: 'HomeDataAPI';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String;
-    rating: Attribute.Float;
-    time: Attribute.String;
-    desc: Attribute.Text;
-    starring: Attribute.String;
-    genre: Attribute.String;
-    tags: Attribute.String;
-    cover: Attribute.Media;
-    date: Attribute.String;
-    video: Attribute.String;
-    img: Attribute.Media;
-    type: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::home-data-api.home-data-api',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::home-data-api.home-data-api',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiLatestLatest extends Schema.CollectionType {
-  collectionName: 'latests';
-  info: {
-    singularName: 'latest';
-    pluralName: 'latests';
-    displayName: 'latest';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    cover: Attribute.Media;
-    name: Attribute.String;
-    date: Attribute.String;
-    time: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::latest.latest',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::latest.latest',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiRecommendedRecommended extends Schema.CollectionType {
-  collectionName: 'recommendeds';
-  info: {
-    singularName: 'recommended';
-    pluralName: 'recommendeds';
-    displayName: 'recommended';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    cover: Attribute.Media;
-    name: Attribute.String;
-    date: Attribute.String;
-    time: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::recommended.recommended',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::recommended.recommended',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTrendingTrending extends Schema.CollectionType {
-  collectionName: 'trendings';
-  info: {
-    singularName: 'trending';
-    pluralName: 'trendings';
-    displayName: 'trending';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String;
-    rating: Attribute.Float;
-    time: Attribute.String;
-    desc: Attribute.Text;
-    starring: Attribute.String;
-    genre: Attribute.String;
-    tags: Attribute.String;
-    cover: Attribute.Media;
-    date: Attribute.String;
-    video: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::trending.trending',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::trending.trending',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiUpcomeUpcome extends Schema.CollectionType {
-  collectionName: 'upcomes';
-  info: {
-    singularName: 'upcome';
-    pluralName: 'upcomes';
-    displayName: 'upcome';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    cover: Attribute.Media;
-    name: Attribute.String;
-    date: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::upcome.upcome',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::upcome.upcome',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -978,6 +842,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::home-collection.home-collection': ApiHomeCollectionHomeCollection;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -986,11 +851,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::home-data-api.home-data-api': ApiHomeDataApiHomeDataApi;
-      'api::latest.latest': ApiLatestLatest;
-      'api::recommended.recommended': ApiRecommendedRecommended;
-      'api::trending.trending': ApiTrendingTrending;
-      'api::upcome.upcome': ApiUpcomeUpcome;
     }
   }
 }
