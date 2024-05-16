@@ -60,6 +60,14 @@
     }
 }
 
+@media (max-width: 1600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        gap: 20px;
+    }
+}
+
 @media (max-width: 576px) {
     .cards {
         display: grid;
@@ -75,11 +83,11 @@
         }
 
         &-title {
-            font: var(--infoCard-cards-mobile-title-font);
+            font: var(--infoCard-cards-title-mobile-font);
         }
 
         &-desc {
-            font: var(--infoCard-cards-mobile-desc-font);
+            font: var(--infoCard-cards-desc-mobile-font);
             letter-spacing: 1px;
 
             p {
