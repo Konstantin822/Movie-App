@@ -19,7 +19,7 @@
     background-position: center;
     background-size: cover;
     width: 150px;
-    height: 200px;
+    height: 220px;
 }
 
 .swiper-slide img {
@@ -30,7 +30,7 @@
 
 @media (max-width: 576px) {
     .swiper {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     .cardSwiper {
@@ -41,6 +41,6 @@
         background-position: center;
         background-size: cover;
         width: 120px;
-        height: 200px;
+        height: 180px;
     }
 }
