@@ -14,8 +14,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Drama",
                 },
             ],
@@ -37,8 +37,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Fantasy",
                 },
             ],
@@ -60,8 +60,8 @@ export const homeData = {
             genre: "Animation",
             tags: [
                 {
-                    tag1: "Animation",
-                    tag2: "Short",
+                    tag1: "Animation,",
+                    tag2: "Short,",
                     tag3: "Action",
                 },
             ],
@@ -83,8 +83,8 @@ export const homeData = {
             genre: "Sci-fi",
             tags: [
                 {
-                    tag1: "Drama",
-                    tag2: "Mystery",
+                    tag1: "Drama,",
+                    tag2: "Mystery,",
                     tag3: "Sci-fi",
                 },
             ],
@@ -106,7 +106,7 @@ export const homeData = {
             genre: "Sci-fi",
             tags: [
                 {
-                    tag1: "Drama",
+                    tag1: "Drama,",
                     tag2: "Sci-fi",
                 },
             ],
@@ -128,8 +128,8 @@ export const homeData = {
             genre: "Comedy",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Comedy",
+                    tag1: "Action,",
+                    tag2: "Comedy,",
                     tag3: "Sci-fi",
                 },
             ],
@@ -151,7 +151,7 @@ export const homeData = {
             genre: "Crime",
             tags: [
                 {
-                    tag1: "Action",
+                    tag1: "Action,",
                     tag2: "Crime",
                 },
             ],
@@ -173,8 +173,8 @@ export const homeData = {
             genre: "Horror",
             tags: [
                 {
-                    tag1: "Horror",
-                    tag2: "Mystery",
+                    tag1: "Horror,",
+                    tag2: "Mystery,",
                     tag3: "Sci-fi",
                 },
             ],
@@ -196,8 +196,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Sci-fi",
                 },
             ],
@@ -219,8 +219,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "War",
+                    tag1: "Action,",
+                    tag2: "War,",
                     tag3: "Comedy",
                 },
             ],
@@ -242,8 +242,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Sci-fi",
+                    tag1: "Action,",
+                    tag2: "Sci-fi,",
                     tag3: "Drama",
                 },
             ],
@@ -265,8 +265,8 @@ export const homeData = {
             genre: "Adventure",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Drama",
                 },
             ],
@@ -288,8 +288,8 @@ export const homeData = {
             genre: "Horror",
             tags: [
                 {
-                    tag1: "Drama",
-                    tag2: "Horror",
+                    tag1: "Drama,",
+                    tag2: "Horror,",
                     tag3: "Sci-fi",
                 },
             ],
@@ -311,8 +311,8 @@ export const homeData = {
             genre: "Thriller",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Crime",
+                    tag1: "Action,",
+                    tag2: "Crime,",
                     tag3: "Thriller",
                 },
             ],
@@ -334,8 +334,8 @@ export const homeData = {
             genre: "Horror",
             tags: [
                 {
-                    tag1: "Horror",
-                    tag2: "Sci-fi",
+                    tag1: "Horror,",
+                    tag2: "Sci-fi,",
                     tag3: "Thriller",
                 },
             ],
@@ -357,8 +357,8 @@ export const homeData = {
             genre: "Thriller",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Crime",
+                    tag1: "Action,",
+                    tag2: "Crime,",
                     tag3: "Thriller",
                 },
             ],
@@ -380,8 +380,8 @@ export const homeData = {
             genre: "Thriller",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Crime",
+                    tag1: "Action,",
+                    tag2: "Crime,",
                     tag3: "Thriller",
                 },
             ],
@@ -403,8 +403,8 @@ export const homeData = {
             genre: "Action",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Horror",
                 },
             ],
@@ -426,8 +426,8 @@ export const homeData = {
             genre: "Thriller",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Crime",
+                    tag1: "Action,",
+                    tag2: "Crime,",
                     tag3: "Thriller",
                 },
             ],
@@ -449,8 +449,8 @@ export const homeData = {
             genre: "Drama",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Adventure",
+                    tag1: "Action,",
+                    tag2: "Adventure,",
                     tag3: "Drama",
                 },
             ],
@@ -472,8 +472,8 @@ export const homeData = {
             genre: "Thriller",
             tags: [
                 {
-                    tag1: "Action",
-                    tag2: "Drama",
+                    tag1: "Action,",
+                    tag2: "Drama,",
                     tag3: "Thriller",
                 },
             ],

@@ -113,3 +113,101 @@
 //     );
 
 // }
+
+
+// Lates draft
+// import React, { useState, useEffect } from "react";
+// import { homeData } from "../../data/homeData.js";
+// import { useQuery } from "@apollo/client";
+
+// import Carousel from '../../components/Carousel/Carousel.jsx';
+// import Frame from '../../components/Frame/Frame.jsx';
+
+// import { GET_DATA } from "../../data/homeCollections.jsx";
+
+// export default function Home() {
+//     const { loading, error, data } = useQuery(GET_DATA)
+//     const [info, setInfo] = useState([])
+//     const [frame, setFrame] = useState(false)
+
+//     useEffect(() => {
+//         setInfo(homeData.cards)
+//     }, [])
+
+//     useEffect(() => {
+//         if (data) {
+//             const formattedData = data.homeCollections.data.map(item => ({
+//                 id: item.id,
+//                 ...item.attributes,
+//                 img: `http://localhost:1338${item.attributes.img.data.attributes.url}`,
+//                 cover: `http://localhost:1338${item.attributes.cover.data.attributes.url}`,
+//                 tags: item.attributes.tags,
+//             }))
+//             setInfo(formattedData)
+//         }
+//     }, [data])
+
+//     if (loading) return <p>Loading...</p>
+//     if (error) return <p>Error: {error.message}</p>
+
+//     const cardChange = id => {
+//         const newInfo = info.map(item => {
+//             item.active = false
+
+//             if (item.id === id) {
+//                 item.active = true
+//             }
+//             return item
+//         })
+//         setInfo(newInfo)
+//     }
+
+//     const cardChange = id => {
+//         setInfo(info.map(item => ({
+//             ...item,
+//             active: item.id === id
+//         })))
+//     }
+
+//     const toggleFrame = () => {
+//         setFrame(!frame)
+//     }
+
+//     return (
+//         <>
+//             <section className="hero">
+//                 {info && info.length > 0 && info.map(item => (
+//                     <div className="container hero__container" key={item.id}>
+//                         <img
+//                             className={`hero__bg ${item.active ? 'active' : undefined}`}
+//                             src={item.cover}
+//                             alt="Background Image" />
+//                         <div className={`hero__card ${item.active ? 'active' : undefined}`}>
+//                             <h1 className="hero__card-title">{item.name}</h1>
+//                             <div className="hero__card-desc1">
+//                                 <p>{item.type}</p>
+//                                 <p>IMDb: {item.rating}</p>
+//                                 <p>{item.year}</p>
+//                                 <p>{item.time}</p>
+//                                 <p>{item.genre}</p>
+//                             </div>
+//                             <p className="hero__card-desc2">
+//                                 {item.desc}
+//                             </p>
+//                             <div className="hero__card-desc3">
+//                                 <p>Tags: {item.tags}
+//                                 </p>
+//                                 <p>Starring:<span>{item.starring}</span></p>
+//                             </div>
+//                             <button className="hero__btn" onClick={toggleFrame}>
+//                                 Watch trailer
+//                             </button>
+//                         </div>
+//                         {item.active && (<Frame frame={item} status={frame} toggleFrame={toggleFrame} />)}
+//                     </div>
+//                 ))}
+//                 {info && info.length > 0 && (<Carousel cards={info} cardsChange={cardChange} />)}
+//             </section>
+//         </>
+//     );
+// }

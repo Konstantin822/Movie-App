@@ -4,6 +4,7 @@ import { homeData } from "../../data/homeData.js";
 import Carousel from '../../components/Carousel/Carousel.jsx';
 import Frame from '../../components/Frame/Frame.jsx';
 
+
 export default function Home() {
     const [info, setInfo] = useState([])
     const [frame, setFrame] = useState(false)
@@ -51,8 +52,8 @@ export default function Home() {
                             </p>
                             <div className="hero__card-desc3">
                                 <p>Tags:
-                                    <span>{item.tags[0].tag1},</span>
-                                    <span>{item.tags[0].tag2},</span>
+                                    <span>{item.tags[0].tag1}</span>
+                                    <span>{item.tags[0].tag2}</span>
                                     <span>{item.tags[0].tag3}</span>
                                 </p>
                                 <p>Starring:<span>{item.starring}</span></p>
@@ -64,7 +65,7 @@ export default function Home() {
                         {item.active && (<Frame frame={item} status={frame} toggleFrame={toggleFrame} />)}
                     </div>
                 ))}
-                {info && info.length > 0 && <Carousel cards={info} cardsChange={cardChange} />}
+                {info && info.length > 0 && (<Carousel cards={info} cardsChange={cardChange} />)}
             </section>
         </>
     );
