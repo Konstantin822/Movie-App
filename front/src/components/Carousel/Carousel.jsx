@@ -1,3 +1,4 @@
+// Import modules
 import React from "react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,9 +7,10 @@ import 'swiper/css/effect-coverflow';
 
 import { EffectCoverflow, Autoplay } from 'swiper/modules'
 
-export default function Carousel({ cards, cardsChange }) {
-
+// Carousel 
+export default function Carousel({ cards, cardsRender }) {
     return (
+        // Swiper layout
         <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -34,10 +36,12 @@ export default function Carousel({ cards, cardsChange }) {
                     <SwiperSlide key={item.id}>
                         <img src={item.img}
                             alt="Image"
-                            onClick={() => cardsChange(item.id)}
+                            onClick={() => cardsRender(item.id)}
                         />
                     </SwiperSlide>
                 ))}
         </Swiper>
+        // <=============================================================>
     );
 }
+// <=============================================================>

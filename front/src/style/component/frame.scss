@@ -1,3 +1,4 @@
+// Frame
 .frame {
     position: absolute;
     left: 530px;
@@ -26,6 +27,9 @@
     opacity: 1;
 }
 
+// <=============================================================>
+
+// Frame mobile
 @media (max-width: 576px) {
     .frame {
         position: absolute;
@@ -58,3 +62,5 @@
         opacity: 1;
     }
 }
+
+// <=============================================================>

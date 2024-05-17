@@ -95,7 +95,7 @@ export const homeData = {
         {
             id: 5,
             img: "../images/foundation.jpg",
-            cover: "../covers/foundation.jpg",
+            cover: "../covers/foundation.jpeg",
             name: "Foundation",
             type: "TV Series",
             rating: 7.6,

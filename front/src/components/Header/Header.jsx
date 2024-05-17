@@ -1,9 +1,16 @@
+// Import modules
 import React, { useState, useEffect } from "react";
 
+// <=============================================================>
+
+// Header
 export default function Header() {
+    // Initialize state
     const [activeMenu, setActiveMenu] = useState(false);
     const [activeTheme, setActiveTheme] = useState("dark")
+    // <=============================================================>
 
+    // Toggle buttons
     const toggleMenu = () => {
         setActiveMenu(!activeMenu);
     };
@@ -18,8 +25,10 @@ export default function Header() {
     useEffect(() => {
         document.body.classList.add(activeTheme)
     }, [activeTheme])
+    // <=============================================================>
 
     return (
+        // Header layout
         <header>
             <div className="header__container">
                 <a href="/" className="header__logo">
@@ -64,5 +73,7 @@ export default function Header() {
                 </div>
             </div>
         </header>
+        // <=============================================================>
     );
 }
+// <=============================================================>

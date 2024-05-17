@@ -1,7 +1,12 @@
+//Import modules
 import React from "react";
 
+// <=============================================================>
+
+// Frame
 export default function Frame({ frame, status, toggleFrame }) {
     return (
+        // Frame layout
         <div className={`frame ${status ? 'active' : undefined}`}>
             <a href="#" className="frame__close" onClick={toggleFrame}>
                 Close
@@ -18,5 +23,7 @@ export default function Frame({ frame, status, toggleFrame }) {
                 allowFullScreen
             ></iframe>
         </div>
+        // <=============================================================>
     );
 }
+// <=============================================================>

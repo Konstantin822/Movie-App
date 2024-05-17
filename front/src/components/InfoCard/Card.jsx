@@ -1,16 +1,22 @@
+// Import modules
 import React from "react";
 import { useParams } from "react-router-dom";
 import { homeData } from "../../data/homeData";
+// <=============================================================>
 
+// Card
 export default function Card() {
+    // Search for card by id
     const { id } = useParams()
     const cardInfo = homeData.cards.find(card => card.id === parseInt(id))
 
     if (!cardInfo) {
         return <div>Card not found</div>
     }
+    // <=============================================================>
 
     return (
+        // Card layout
         <div className="card" key={cardInfo.id}>
             <img
                 src={cardInfo.img}
@@ -47,6 +53,7 @@ export default function Card() {
                 ></iframe>
             </div>
         </div>
-
+        // <=============================================================>
     );
 }
+// <=============================================================>

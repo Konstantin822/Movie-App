@@ -1,9 +1,13 @@
+// Import modules and data
 import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
 import InfoCard from '../../components/InfoCard/InfoCard.jsx';
+// <=============================================================>
 
-export default function Movies() {
+// TV Series page
+export default function TvSeries() {
+    // Initialize state
     const [info, setInfo] = useState([])
     const [selector, setSelector] = useState("--")
     const [search, setSearch] = useState("")
@@ -11,7 +15,9 @@ export default function Movies() {
     useEffect(() => {
         setInfo(homeData.cards.filter(card => card.type === "TV Series"))
     }, [])
+    // <=============================================================>
 
+    // Filter tv series based on selected option and search input
     const filter = () => {
         let filterSeries = homeData.cards.filter(card => card.type === "TV Series")
         if (selector != "--" && search) {
@@ -31,7 +37,9 @@ export default function Movies() {
         setInfo(filterSeries)
         setSelector("--")
     }
+    // <=============================================================>
 
+    // State update control
     const selectorChange = (item) => {
         setSelector(item.target.value)
     }
@@ -44,8 +52,10 @@ export default function Movies() {
         filter()
         setSearch("")
     }
+    // <=============================================================>
 
-    const cardRender = (id) => {
+    // Render card
+    const cardRender = id => {
         const newInfo = info.map(card => {
             card.active = false
 
@@ -56,8 +66,11 @@ export default function Movies() {
         })
         setInfo(newInfo)
     }
+    // <=============================================================>
+
 
     return (
+        // TV Series layout
         <div className="series">
             <div className="container series__container">
                 {info && info.length > 0 && <InfoCard
@@ -70,5 +83,7 @@ export default function Movies() {
                     searchBtn={searchBtn} />}
             </div>
         </div>
+        // <=============================================================>
     );
 }
+// <=============================================================>

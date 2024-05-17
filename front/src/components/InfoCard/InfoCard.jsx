@@ -1,9 +1,12 @@
+// Import modules
 import React from "react";
 import { Link } from "react-router-dom";
+// <=============================================================>
 
+// Info card
 export default function InfoCard({ content, cardsRender, selector, selectorChange, search, searchChange, searchBtn }) {
-
     return (
+        // Info card layout
         <>
             <div className="cards">
                 <div className="cards__filter">
@@ -17,6 +20,7 @@ export default function InfoCard({ content, cardsRender, selector, selectorChang
                     <button onClick={searchBtn}>Search</button>
                 </div>
 
+                {/* Link to card */}
                 {content.map(item => (
                     <Link to={`/card/${item.id}`} key={item.id}>
                         <div className={`cards__info ${item.active ? undefined : 'active'}`} onClick={() => cardsRender(item.id)}>
@@ -34,5 +38,7 @@ export default function InfoCard({ content, cardsRender, selector, selectorChang
                 ))}
             </div>
         </>
+        // <=============================================================>
     );
 }
+// <=============================================================>

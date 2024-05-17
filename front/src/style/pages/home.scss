@@ -1,3 +1,4 @@
+// Section hero
 .hero {
     position: relative;
     min-height: 120vh;
@@ -106,6 +107,7 @@
         opacity: 1;
     }
 
+    // Mobile
     @media (max-width: 576px) {
 
         &__container {
@@ -113,18 +115,9 @@
         }
 
         &__card {
-            display: flex;
-            flex-direction: column;
             gap: 15px;
             max-width: 600px;
-            padding: 20px;
             margin-top: 20px;
-            background-color: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            visibility: hidden;
-            opacity: 0;
-            z-index: 100;
 
             &-title {
                 font: var(--home-hero-card-title-mobile-font);
@@ -188,4 +181,8 @@
             opacity: 1;
         }
     }
+
+    // <=============================================================>
 }
+
+// <=============================================================>

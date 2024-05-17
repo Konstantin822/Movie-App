@@ -1,18 +1,23 @@
+// Import modules and data
 import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/homeData.js";
 
 import Carousel from '../../components/Carousel/Carousel.jsx';
 import Frame from '../../components/Frame/Frame.jsx';
 
+// Home page
 export default function Home() {
+    // Initialize state
     const [info, setInfo] = useState([])
     const [frame, setFrame] = useState(false)
 
     useEffect(() => {
         setInfo(homeData.cards)
     }, [])
+    // <=============================================================>
 
-    const cardChange = id => {
+    // Update card
+    const cardRender = id => {
         const newInfo = info.map(item => {
             item.active = false
 
@@ -23,12 +28,16 @@ export default function Home() {
         })
         setInfo(newInfo)
     }
+    // <=============================================================>
 
+    // Toggle frame
     const toggleFrame = () => {
         setFrame(!frame)
     }
+    // <=============================================================>
 
     return (
+        // Section hero layout
         <>
             <section className="hero">
                 {info && info.length > 0 && info.map(item => (
@@ -64,8 +73,10 @@ export default function Home() {
                         {item.active && (<Frame frame={item} status={frame} toggleFrame={toggleFrame} />)}
                     </div>
                 ))}
-                {info && info.length > 0 && <Carousel cards={info} cardsChange={cardChange} />}
+                {info && info.length > 0 && <Carousel cards={info} cardsRender={cardRender} />}
             </section>
         </>
+        // <=============================================================>
     );
 }
+// <=============================================================>
