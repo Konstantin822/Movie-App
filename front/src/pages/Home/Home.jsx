@@ -60,8 +60,8 @@ export default function Home() {
                             </p>
                             <div className="hero__card-desc3">
                                 <p>Tags:
-                                    <span>{item.tags[0].tag1},</span>
-                                    <span>{item.tags[0].tag2},</span>
+                                    <span>{item.tags[0].tag1}</span>
+                                    <span>{item.tags[0].tag2}</span>
                                     <span>{item.tags[0].tag3}</span>
                                 </p>
                                 <p>Starring:<span>{item.starring}</span></p>
