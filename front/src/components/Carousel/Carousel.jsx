@@ -35,6 +35,7 @@ export default function Carousel({ cards, cardsRender }) {
                 cards.map(item => (
                     <SwiperSlide key={item.id}>
                         <img src={item.img}
+                            alt="Card Img"
                             onClick={() => cardsRender(item.id)}
                         />
                     </SwiperSlide>
