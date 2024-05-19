@@ -20,7 +20,7 @@ export default function Movies() {
     // Filter movies based on selected option and search input 
     const filter = () => {
         let filterMovies = homeData.cards.filter(card => card.type === "Movie")
-        if (selector != "--" && search) {
+        if (selector !== "--" && search) {
             filterMovies = filterMovies.filter(card => {
                 switch (selector) {
                     case "Rating":

@@ -20,7 +20,7 @@ export default function Card() {
         <div className="card" key={cardInfo.id}>
             <img
                 src={cardInfo.img}
-                alt="Image" />
+            />
             <div className="card__info">
                 <h1 className="card__info-title">{cardInfo.name}</h1>
                 <div className="card__info-desc1">

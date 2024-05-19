@@ -44,8 +44,7 @@ export default function Home() {
                     <div className="container hero__container" key={item.id}>
                         <img
                             className={`hero__bg ${item.active ? 'active' : undefined}`}
-                            src={item.cover}
-                            alt="Background Image" />
+                            src={item.cover} />
                         <div className={`hero__card ${item.active ? 'active' : undefined}`}>
                             <h1 className="hero__card-title">{item.name}</h1>
                             <div className="hero__card-desc1">

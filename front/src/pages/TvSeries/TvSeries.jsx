@@ -20,7 +20,7 @@ export default function TvSeries() {
     // Filter tv series based on selected option and search input
     const filter = () => {
         let filterSeries = homeData.cards.filter(card => card.type === "TV Series")
-        if (selector != "--" && search) {
+        if (selector !== "--" && search) {
             filterSeries = filterSeries.filter(card => {
                 switch (selector) {
                     case "Rating":
