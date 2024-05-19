@@ -63,6 +63,17 @@
 
 // <=============================================================>
 
+// Info card cards laptop
+@media (max-width: 1600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        gap: 20px;
+    }
+}
+
+// <=============================================================>
+
 // Info card cards mobile
 @media (max-width: 576px) {
     .cards {
