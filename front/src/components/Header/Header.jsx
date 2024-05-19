@@ -32,7 +32,7 @@ export default function Header() {
         <header>
             <div className="header__container">
                 <a href="/" className="header__logo">
-                    Your logo
+                    Logo
                 </a>
                 <nav className="header__nav">
                     <ul className={`header__nav-sidebar ${activeMenu ? 'open' : ''}`}>
