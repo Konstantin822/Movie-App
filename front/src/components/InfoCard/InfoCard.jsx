@@ -26,7 +26,7 @@ export default function InfoCard({ content, cardsRender, selector, selectorChang
                         <div className={`cards__info ${item.active ? undefined : 'active'}`} onClick={() => cardsRender(item.id)}>
                             <img
                                 src={item.img}
-                            />
+                                alt="Card Img" />
                             <h1 className="cards__info-title">{item.name}</h1>
                             <div className="cards__info-desc">
                                 <p>Rating: {item.rating}</p>
