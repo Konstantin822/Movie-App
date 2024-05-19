@@ -8,7 +8,7 @@ export default function Frame({ frame, status, toggleFrame }) {
     return (
         // Frame layout
         <div className={`frame ${status ? 'active' : undefined}`}>
-            <a href="#" className="frame__close" onClick={toggleFrame}>
+            <a href="" className="frame__close" onClick={toggleFrame}>
                 Close
             </a>
             <iframe
