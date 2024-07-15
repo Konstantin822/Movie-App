@@ -7,15 +7,20 @@ The application allows users to search for movies, view detailed information, an
 Features
 
 Search Functionality: Users can search for movies by year, genre and rating.
+
 Movie Details: View detailed information about each movie, including release date, rating, and summary.
+
 Responsive Design: The application is designed to be responsive and work on various devices.
 
 
 Technologies Used
 
 HTML: Structure of the application.
+
 CSS: Styling and layout of the application.
+
 JavaScript: Dynamic content and interactivity.
+
 React: JavaScript library for building user interfaces.
 
 
