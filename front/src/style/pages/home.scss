@@ -1,0 +1,188 @@
+// Section hero
+.hero {
+    position: relative;
+    min-height: 120vh;
+
+    &__container {
+        padding: 0 100px;
+        position: absolute;
+        display: flex;
+        padding-top: 100px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120vh;
+        object-fit: cover;
+        object-position: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    &__bg.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 650px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+        z-index: 100;
+
+        &-title {
+            font: var(--home-hero-card-title-font);
+            letter-spacing: 1.6px;
+            color: white;
+        }
+
+        &-desc1 {
+            color: rgba(255, 255, 2555, 0.6);
+            font: var(--home-hero-card-desc1-font);
+            letter-spacing: 0.5px;
+            display: flex;
+
+            p {
+                padding: 0 10px;
+                border-right: 1px solid rgba(255, 255, 2555, 0.6);
+            }
+
+            p:first-child {
+                padding-left: 0;
+            }
+
+            p:last-child {
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+
+        &-desc2 {
+            font: var(--home-hero-card-desc2-font);
+            letter-spacing: 1px;
+            color: white;
+
+        }
+
+        &-desc3 {
+            font: var(--home-hero-card-desc3-font);
+            letter-spacing: 0.5px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p span {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    &__btn {
+        max-width: 120px;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        background-color: red;
+        color: white;
+    }
+
+    &__card.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    // // Mobile
+    // @media (max-width: 576px) {
+
+    //     &__container {
+    //         justify-content: center;
+    //     }
+
+    //     &__card {
+    //         gap: 15px;
+    //         max-width: 600px;
+    //         margin-top: 20px;
+
+    //         &-title {
+    //             font: var(--home-hero-card-title-mobile-font);
+    //         }
+
+    //         &-desc1 {
+    //             color: rgba(255, 255, 2555, 0.6);
+    //             font: var(--home-hero-card-desc1-mobile-font);
+    //             letter-spacing: 0.2px;
+    //             display: flex;
+
+    //             p {
+    //                 padding: 0 10px;
+    //                 border-right: 1px solid rgba(255, 255, 2555, 0.6);
+    //             }
+
+    //             p:first-child {
+    //                 padding-left: 0;
+    //             }
+
+    //             p:last-child {
+    //                 padding-right: 0;
+    //                 border-right: none;
+    //             }
+    //         }
+
+    //         &-desc2 {
+    //             font: var(--home-hero-card-desc2-mobile-font);
+    //             color: white;
+
+    //         }
+
+    //         &-desc3 {
+    //             font: var(--home-hero-card-desc3-mobile-font);
+    //             color: white;
+    //             display: flex;
+    //             flex-direction: column;
+    //             gap: 5px;
+
+    //             p span {
+    //                 padding-left: 5px;
+    //             }
+    //         }
+    //     }
+
+    //     &__btn {
+    //         max-width: 120px;
+    //         padding: 10px 0;
+    //         border: none;
+    //         border-radius: 10px;
+    //         cursor: pointer;
+    //     }
+
+    //     &__btn:hover {
+    //         background-color: red;
+    //         color: white;
+    //     }
+
+    //     &__card.active {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
+
+    // // <=============================================================>
+}
+
+// <=============================================================>

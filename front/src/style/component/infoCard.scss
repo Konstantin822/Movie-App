@@ -1,0 +1,107 @@
+// Info card cards
+.cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 550px);
+    gap: 30px;
+    justify-content: center;
+    margin: 80px 0;
+
+    &__filter {
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        top: -55px;
+        left: 50%;
+        transform: translate(-50%);
+
+        select,
+        input,
+        button {
+            font: var(--button-font);
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: rgb(80, 80, 80);
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        border: 1px solid rgb(128, 128, 128);
+        border-radius: 20px;
+        background-color: rgb(3, 3, 3);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+        img {
+            height: 780px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        &-title {
+            font: var(--infoCard-cards-title-font);
+            letter-spacing: 0.2px;
+        }
+
+        &-desc {
+            margin-bottom: 5px;
+            font: var(--infoCard-cards-desc-font);
+            letter-spacing: 1.6px;
+
+            p {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+// <=============================================================>
+
+// Info card cards laptop
+@media (max-width: 1600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        gap: 20px;
+    }
+}
+
+// <=============================================================>
+
+// Info card cards mobile
+// @media (max-width: 576px) {
+//     .cards {
+//         display: grid;
+//         grid-template-columns: repeat(2, 280px);
+//         column-gap: 10px;
+//     }
+
+//     .cards__info {
+//         height: 520px;
+
+//         img {
+//             max-height: 420px;
+//         }
+
+//         &-title {
+//             font: var(--infoCard-cards-title-mobile-font);
+//         }
+
+//         &-desc {
+//             font: var(--infoCard-cards-desc-mobile-font);
+//             letter-spacing: 1px;
+
+//             p {
+//                 padding-bottom: 5px;
+//             }
+//         }
+//     }
+// }
+
+// <=============================================================>

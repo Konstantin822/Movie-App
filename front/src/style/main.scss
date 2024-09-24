@@ -1,0 +1,22 @@
+// Global
+@import './global/global.scss';
+@import './global/reset.scss';
+
+// Common 
+@import './common/header.scss';
+@import './common/footer.scss';
+
+// Pages
+@import './pages/home.scss';
+@import './pages/movies.scss';
+@import './pages/tvSeries.scss';
+
+// Component
+@import './component/infoCard.scss';
+@import './component/card.scss';
+@import './component/swiper.scss';
+@import './component/frame.scss';
+@import './component/switch.scss';
+
+// Variables
+@import './variables/fonts.scss';

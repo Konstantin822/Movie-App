@@ -1,0 +1,101 @@
+// Frame
+.frame {
+    position: absolute;
+    left: 530px;
+    right: 530px;
+    padding: 40px 0 20px 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    z-index: 300;
+    visibility: hidden;
+    opacity: 0;
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: 20px;
+    }
+}
+
+.frame.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+// <=============================================================>
+
+// Frame laptop
+@media (max-width: 1600px) {
+    .frame {
+        position: absolute;
+        left: 380px;
+        right: 350px;
+        transform: translateY(-10%);
+        padding: 40px 0 20px 40px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+        z-index: 300;
+        visibility: hidden;
+        opacity: 0;
+
+        &__close {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            cursor: pointer;
+            color: var(--color-white);
+            font-size: 20px;
+        }
+    }
+
+    .frame.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+// <=============================================================>
+
+// Frame mobile
+// @media (max-width: 576px) {
+//     .frame {
+//         position: absolute;
+//         padding: 40px 15px 20px 15px;
+//         left: 8%;
+//         right: 8%;
+//         backdrop-filter: blur(20px);
+//         box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+//         z-index: 300;
+//         visibility: hidden;
+//         opacity: 0;
+
+//         iframe {
+//             width: 520px;
+//             height: 300px;
+
+//         }
+
+//         &__close {
+//             position: absolute;
+//             top: 10px;
+//             left: 30px;
+//             cursor: pointer;
+//             font-size: 20px;
+//         }
+//     }
+
+//     .frame.active {
+//         visibility: visible;
+//         opacity: 1;
+//     }
+// }
+
+// <=============================================================>

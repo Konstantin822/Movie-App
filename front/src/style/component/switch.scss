@@ -1,0 +1,50 @@
+// Theme switch
+.light {
+    --bg-color: rgb(205, 207, 207);
+    --color-text: rgb(255, 255, 255);
+    --card-color: rgb(128, 124, 124);
+    --switch-bg-color: rgb(199, 199, 199);
+    --switch-color: rgb(0, 0, 0);
+}
+
+.dark {
+    --bg-color: black;
+    --color-text: white;
+    --card-color: rgb(61, 59, 59);
+    --switch-bg-color: rgb(85, 83, 83);
+    --switch-color: rgb(255, 246, 246);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color-text);
+}
+
+.card__info,
+.card__frame {
+    background-color: var(--card-color);
+}
+
+.header__theme {
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: var(--switch-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+
+    &-switch {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: var(--switch-color);
+    }
+}
+
+.active {
+    justify-content: flex-end;
+}
+
+// <=============================================================>

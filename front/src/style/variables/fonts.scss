@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    // Fonts
+    --roboto-font: 'Roboto', sans-serif;
+
+    // Global Fonts
+    --button-font: 500 16px/19px var(--roboto-font);
+
+    // Header Fonts
+    --header-logo-font: 700 35px/normal var(--roboto-font);
+    --header-nav-font: 400 20px/normal var(--roboto-font);
+    --header-nav-mobile-font: 300 16px/normal var(--roboto-font);
+
+    // Home Fonts
+    --home-hero-card-title-font: 700 55px/normal var(--roboto-font);
+    --home-hero-card-desc1-font: 400 20px/normal var(--roboto-font);
+    --home-hero-card-desc2-font: 400 20px/1.5em var(--roboto-font);
+    --home-hero-card-desc3-font: 300 18px/normal var(--roboto-font);
+
+    --home-hero-card-title-mobile-font: 500 30px/normal var(--roboto-font);
+    --home-hero-card-desc1-mobile-font: 300 15px/normal var(--roboto-font);
+    --home-hero-card-desc2-mobile-font: 400 17px/normal var(--roboto-font);
+    --home-hero-card-desc3-mobile-font: 300 17px/normal var(--roboto-font);
+
+    // Components Fonts
+    --infoCard-cards-title-font: 500 28px/normal var(--roboto-font);
+    --infoCard-cards-desc-font: 300 20px/normal var(--roboto-font);
+
+    --infoCard-cards-title-mobile-font: 600 14px/normal var(--roboto-font);
+    --infoCard-cards-desc-mobile-font: 300 12px/normal var(--roboto-font);
+
+    --card-title-font: 700 50px/normal var(--roboto-font);
+    --card-desc1-font: 300 16px/normal var(--roboto-font);
+    --card-desc2-font: 400 23px/35px var(--roboto-font);
+
+    --card-title-laptop-font: 700 38px/normal var(--roboto-font);
+    --card-desc1-laptop-font: 300 15px/normal var(--roboto-font);
+    --card-desc2-laptop-font: 400 19px/30px var(--roboto-font);
+
+    --card-title-mobile-font: 700 30px/normal var(--roboto-font);
+    --card-desc1-mobile-font: 300 14px/normal var(--roboto-font);
+    --card-desc2-mobile-font: 300 20px/25px var(--roboto-font);
+
+    // Footer Fonts 
+    --footer-title-font: 500 35px/normal var(--roboto-font);
+    --footer-link-font: 400 20px/normal var(--roboto-font);
+}
