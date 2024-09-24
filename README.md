@@ -4,12 +4,12 @@ This Movie App is a front-end project designed to provide users with information
 
 Features
 
-Search Functionality: Users can search for movies by year, genre and rating.
-Movie Details: View detailed information about each movie, including release date, rating, and summary.
+- Search Functionality: Users can search for movies by year, genre and rating.
+- Movie Details: View detailed information about each movie, including release date, rating, and summary.
 
 Technologies Used
 
-HTML: Structure of the application.
-CSS: Styling and layout of the application.
-JavaScript: Dynamic content and interactivity.
-React: JavaScript library for building user interfaces.
+- HTML: Structure of the application.
+- CSS: Styling and layout of the application.
+- JavaScript: Dynamic content and interactivity.
+- React: JavaScript library for building user interfaces.
