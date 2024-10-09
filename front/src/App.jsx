@@ -10,6 +10,10 @@ import Footer from './components/Footer/Footer.jsx';
 import 'swiper/css';
 
 function App() {
+
+  fetch('http://localhost:1337/api/movie-collections')
+  .then(response => response.json())
+  .then(data => console.log(data))
   return (
     <div className="wrapper">
       <Header />

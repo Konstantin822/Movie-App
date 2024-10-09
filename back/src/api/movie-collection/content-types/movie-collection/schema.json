@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movie_collections",
+  "info": {
+    "singularName": "movie-collection",
+    "pluralName": "movie-collections",
+    "displayName": "movieCollection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "time": {
+      "type": "string"
+    },
+    "desc1": {
+      "type": "text"
+    },
+    "desc2": {
+      "type": "text"
+    },
+    "starring": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "tag1": {
+      "type": "string"
+    },
+    "tag2": {
+      "type": "string"
+    },
+    "tag3": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "year": {
+      "type": "biginteger"
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
