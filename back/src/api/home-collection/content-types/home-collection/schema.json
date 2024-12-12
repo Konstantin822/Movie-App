@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_collections",
+  "info": {
+    "singularName": "home-collection",
+    "pluralName": "home-collections",
+    "displayName": "Home Collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "time": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "starring": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "year": {
+      "type": "biginteger"
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

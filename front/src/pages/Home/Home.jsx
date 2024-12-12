@@ -1,18 +1,22 @@
 // Import modules and data
 import React, { useState, useEffect } from "react";
+import { useQuery } from "@apollo/client";
 import { homeData } from "../../data/homeData.js";
 
 import Carousel from '../../components/Carousel/Carousel.jsx';
 import Frame from '../../components/Frame/Frame.jsx';
+import { GET_COLLECTIONS } from "../../data/homeCollections.jsx";
+
 
 // Home page
 export default function Home() {
     // Initialize state
+    const { loading, error, data } = useQuery(GET_COLLECTIONS)
     const [info, setInfo] = useState([])
     const [frame, setFrame] = useState(false)
 
     useEffect(() => {
-        setInfo(homeData.cards)
+        setInfo(data.homeCollections)
     }, [])
     // <=============================================================>
 
@@ -44,7 +48,7 @@ export default function Home() {
                     <div className="container hero__container" key={item.id}>
                         <img
                             className={`hero__bg ${item.active ? 'active' : undefined}`}
-                            src={item.cover}
+                            src={item.background?.url}
                             alt="Background Image" />
                         <div className={`hero__card ${item.active ? 'active' : undefined}`}>
                             <h1 className="hero__card-title">{item.name}</h1>
@@ -60,9 +64,7 @@ export default function Home() {
                             </p>
                             <div className="hero__card-desc3">
                                 <p>Tags:
-                                    <span>{item.tags[0].tag1}</span>
-                                    <span>{item.tags[0].tag2}</span>
-                                    <span>{item.tags[0].tag3}</span>
+                                    <span>{item.tags}</span>
                                 </p>
                                 <p>Starring:<span>{item.starring}</span></p>
                             </div>
